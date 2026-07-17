@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Las Recetas de Alba — pan artesanal en Siguatepeque desde 1945. Semitas, bollitos y la hornada del día." />
+  <meta name="theme-color" content="#100d0b" />
+  <title>Las Recetas de Alba · Desde 1945</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css?v=web15" />
+  <script src="main.js?v=2" defer></script>
+</head>
+<body>
+  <a class="skip" href="#pan">Ir al menú</a>
+
+  <header class="nav" data-nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">
+        <img src="assets/logo.png" alt="" width="40" height="40" />
+        <span class="nav-brand-text">
+          <strong>Las Recetas de Alba</strong>
+          <em>Siguatepeque · 1945</em>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#pan">Menú</a>
+        <a href="#casa">La casa</a>
+        <a class="nav-cta" href="#encargos">Encargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO: atmósfera de mostrador + tesis de la casa -->
+    <section class="hero" aria-label="Portada">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-wood" style="--wood: url('assets/mesa-backdrop.jpg')"></div>
+        <div class="hero-haze"></div>
+        <div class="hero-vignette"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">
+            <span class="kicker-dot" aria-hidden="true"></span>
+            Siguatepeque · desde 1945
+          </p>
+          <h1>Pan de casa.<br />Hecho para encargar.</h1>
+          <p class="hero-lede">
+            Semitas, bollitos y la hornada de la semana.
+            Receta de la bisabuela Alba, en Siguatepeque.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-cream" href="#pan">Ver el menú</a>
+            <a class="btn btn-ghost" href="#encargos">Encargar</a>
+          </div>
+        </div>
+
+        <figure
+          class="hero-plate"
+          data-hero-stage
+          aria-label="Pan de la casa: semita y bollito"
+        >
+          <div class="hero-stage">
+            <img
+              class="is-active"
+              src="assets/hero-semita.jpg?v=fix1"
+              alt="Semita de Las Recetas de Alba sobre mesa de madera"
+              width="1152"
+              height="1528"
+              fetchpriority="high"
+              data-hero-slide
+              data-name="Semita"
+            />
+            <img
+              src="assets/hero-bollito.jpg?v=nologo1"
+              alt="Bollito de Las Recetas de Alba sobre mesa de madera"
+              width="1061"
+              height="1408"
+              loading="eager"
+              decoding="async"
+              data-hero-slide
+              data-name="Bollito"
+            />
+          </div>
+          <div class="hero-dots" role="tablist" aria-label="Elegir pan">
+            <button type="button" class="hero-dot is-active" role="tab" aria-selected="true" data-hero-dot="0" aria-label="Semita"></button>
+            <button type="button" class="hero-dot" role="tab" aria-selected="false" data-hero-dot="1" aria-label="Bollito"></button>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- BODY: menú -->
+    <section class="pan" id="pan">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="kicker kicker-ink">Menú</p>
+          <h2>El pan que pedís entre semana</h2>
+          <p class="sec-note">
+            Precios en lempiras. Anotá tu pedido de lunes a viernes;
+            el sábado se entrega o lo pasás a recoger.
+          </p>
+        </header>
+
+        <div class="pan-grid pan-grid-2">
+          <article class="card">
+            <div class="card-photo">
+              <img
+                src="assets/semita.jpg"
+                alt="Semita real: tapa de pasta seca cuarteada"
+                width="1200"
+                height="1200"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-row">
+                <h3>Semita</h3>
+                <p class="price">L 10</p>
+              </div>
+              <p>La de siempre. Tapa cuarteada, tostada por fuera. Va bien con el café de la mañana.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-photo">
+              <img
+                src="assets/bollito.jpg"
+                alt="Bollito real con azúcar en grano"
+                width="800"
+                height="1000"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-row">
+                <h3>Bollito</h3>
+                <p class="price">L 10</p>
+              </div>
+              <p>Masa suave, copa dorada y un poco de azúcar en grano. El antojo fácil.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="carta-block">
+          <p class="carta-label">Otros precios</p>
+          <ul class="carta" aria-label="Otros panes">
+            <li><span>Torta</span><b>L 10</b></li>
+            <li><span>Rosca</span><b>L 8</b></li>
+            <li><span>Chambergas</span><b>L 8</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="casa" id="casa">
+      <div class="wrap casa-inner">
+        <div class="casa-text">
+          <p class="kicker kicker-ink">La casa</p>
+          <h2>La receta de la bisabuela Alba</h2>
+          <p class="casa-lead">
+            En Siguatepeque horneamos pan de casa como en la familia:
+            sin prisa rara ni promesas de catálogo. Masa, horno y el tiempo de siempre.
+          </p>
+          <p>
+            Desde 1945 la receta se ha pasado de mano en mano.
+            Hoy se pide entre semana y se entrega el sábado — simple, para confiar.
+          </p>
+          <ul class="casa-facts" aria-label="Datos de la casa">
+            <li><strong>1945</strong><span>Desde entonces</span></li>
+            <li><strong>Sigua</strong><span>Hecho en casa</span></li>
+            <li><strong>Sábado</strong><span>Día de entrega</span></li>
+          </ul>
+        </div>
+        <figure class="casa-seal">
+          <img
+            src="assets/logo.png"
+            alt="Sello Pan Artesanal · Las Recetas de Alba · Desde 1945"
+            width="220"
+            height="220"
+            loading="lazy"
+          />
+          <figcaption>Pan artesanal · Las Recetas de Alba</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="order" id="encargos">
+      <div class="wrap order-inner">
+        <div>
+          <p class="kicker kicker-light">Encargos</p>
+          <h2>Escribí y anotamos tu pedido</h2>
+          <p class="order-lede">
+            WhatsApp <strong>3172-6752</strong> · Siguatepeque
+          </p>
+          <ul class="order-facts">
+            <li>Pedidos de lunes a viernes</li>
+            <li>Entrega o recolecta el sábado</li>
+            <li>Decinos cantidades y listo</li>
+          </ul>
+        </div>
+        <div class="order-actions">
+          <a
+            class="btn btn-cream"
+            href="https://wa.me/50431726752?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20pan"
+          >Pedir por WhatsApp</a>
+          <a
+            class="order-fb"
+            href="https://www.facebook.com/profile.php?id=100094546037417"
+            target="_blank"
+            rel="noopener"
+          >También estamos en Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-bg" aria-hidden="true">
+      <div class="foot-wood" style="--wood: url('assets/mesa-backdrop.jpg')"></div>
+      <div class="foot-haze"></div>
+    </div>
+    <div class="wrap foot-inner">
+      <div class="foot-brand">
+        <img src="assets/logo.png" alt="" width="40" height="40" />
+        <div>
+          <strong>Las Recetas de Alba</strong>
+          <span>Desde 1945 · Siguatepeque</span>
+        </div>
+      </div>
+      <div class="foot-meta">
+        <a href="https://wa.me/50431726752">3172-6752</a>
+        <a href="../../">Sitio por Dogma Studio</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
